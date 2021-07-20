@@ -5,9 +5,8 @@
 /.pnp
 .pnp.js
 
-.yarn/build-state.yml
-.yarn/unplugged
-.yarn/cache
+
+.yarn/*
 # testing
 /coverage
 
