@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import { ReactComponent as Logo } from './assets/doggy-data-logo.svg';
 function App()
 {
   return (
     <div>
+      <Logo />
       <Router>
         <Switch>
           <Route exact path="/" component={ () => <div>DoggyData1</div> } />
