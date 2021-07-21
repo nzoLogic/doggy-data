@@ -1,11 +1,15 @@
+import { ThemeProvider } from '@material-ui/styles';
 import { ReactComponent as Logo } from './assets/doggy-data-logo.svg';
 import AppRouter from './AppRouter';
-function App()
-{
+import theme from './theme.js';
+
+function App() {
   return (
     <div>
-      <Logo />
-      <AppRouter />
+      <ThemeProvider theme={ theme }>
+        <Logo />
+        <AppRouter />
+      </ThemeProvider>
     </div>
   );
 }
