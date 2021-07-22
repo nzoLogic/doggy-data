@@ -9,19 +9,18 @@ const customTheme = createTheme({
     fontFamily: ['Lato', 'san-serif'].join(',')
   },
 })
+
 function App() {
   return (
-    <div>
-      <ThemeProvider theme={ {
-        ...theme,
-        ...customTheme,
-      }
-      } >
-        <CssBaseline />
-        <Logo />
-        <AppRouter />
-      </ThemeProvider>
-    </div>
+    <ThemeProvider theme={ {
+      ...theme,
+      ...customTheme,
+    }
+    } >
+      <CssBaseline />
+      <Logo />
+      <AppRouter />
+    </ThemeProvider>
   );
 }
 
