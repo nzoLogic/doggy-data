@@ -7,6 +7,15 @@ import theme from './theme.js';
 
 const customTheme = createTheme({
   typography: {
+    'h3': {
+      color: '#B79593',
+    },
+    body1: {
+      color: '#B79593',
+    },
+    caption: {
+      color: '#B69593',
+    },
     fontFamily: ['Lato', 'san-serif'].join(',')
   },
 })
