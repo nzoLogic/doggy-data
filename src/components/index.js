@@ -1,7 +1,9 @@
 import Page from './Page';
 import Typography from './Typography';
+import TextField from './TextField';
 
 export {
-  Page,
+  TextField,
   Typography,
+  Page,
 }
