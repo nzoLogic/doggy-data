@@ -2,7 +2,7 @@ import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ReactComponent as Logo } from './assets/doggy-data-logo.svg';
 import AppRouter from './AppRouter';
-import { StyledRoot } from './App.styles';
+import { StyledRoot, StyledTopbar } from './App.styles';
 import theme from './theme.js';
 
 const customTheme = createTheme({
@@ -20,7 +20,9 @@ function App() {
     } >
       <StyledRoot>
         <CssBaseline />
-        <Logo />
+        <StyledTopbar>
+          <Logo />
+        </StyledTopbar>
         <AppRouter />
       </StyledRoot>
     </ThemeProvider>
