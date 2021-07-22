@@ -8,10 +8,9 @@ const theme = {
     primary: '#FCEFD5',
     secondary: '#EDB147',
   },
-  // button: {
-  //   backgroundColor: '#553635',
-  //   color: '#FCEFD5',
-  // }
+  yellow: '#EDB147',
+  red: '#E9765C',
+  teal: '#8FB9AF',
 }
 
 export default theme;
