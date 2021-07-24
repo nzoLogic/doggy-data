@@ -1,6 +1,14 @@
-import { createStore } from "redux";
+import { createStore, applyMiddleware } from "redux";
+import logger from "redux-logger";
 import { dogProfileReducer } from "./reducer";
+import * as actions from './actions';
 
-const store = createStore(dogProfileReducer)
+const initializeStore = () => createStore(
+  dogProfileReducer,
+  applyMiddleware(logger)
+)
 
-export default store;
+export {
+  initializeStore,
+  actions
+}

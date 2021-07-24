@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
-    "eslint-config-react-app": "^6.0.0"
+    "eslint-config-react-app": "^6.0.0",
+    "redux-logger": "^3.0.6"
   }
 }
