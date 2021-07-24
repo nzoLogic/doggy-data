@@ -1,7 +1,6 @@
-import { Button as MuiButton } from '@material-ui/core';
-
+import { StyledButton } from "./style"
 export default function Button(props) {
   return (
-    <MuiButton variant="contained" { ...props } />
+    <StyledButton variant="contained" { ...props } />
   )
 }

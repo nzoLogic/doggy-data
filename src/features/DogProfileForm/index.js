@@ -25,9 +25,9 @@ const DogProfileForm = () => {
         <Typography variant="h3">Your Doggy Profile</Typography>
         <TextField label="name" name="name" value={ name } onChange={ e => setName(e.target.value) } />
         <TextField label="breed" name="breed" value={ breed } onChange={ e => setBreed(e.target.value) } />
-        <TextField label="dob" name="dob" />
-        <Button onClick={ () => handleSubmit() }>Next</Button>
+        <TextField type="date" label="dob" name="dob" />
       </StyledDogProfileForm>
+      <Button onClick={ handleSubmit }>Next</Button>
     </div>
   )
 }

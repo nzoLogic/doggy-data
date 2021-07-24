@@ -11,6 +11,9 @@ const theme = {
   yellow: '#EDB147',
   red: '#E9765C',
   teal: '#8FB9AF',
+  button: {
+    primary: '#553635',
+  }
 }
 
 export default theme;
