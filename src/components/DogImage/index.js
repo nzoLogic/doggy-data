@@ -7,14 +7,19 @@ import {
   StyledTypography,
 } from './styles';
 
-const DogImage = props => (
+const DogImage = ({ text }) => (
   <StyledRoot>
     <StyledImageContainer>
       <StyledImage src={ dogImage } />
     </StyledImageContainer>
-    <StyledTypography variant="body1">FIDO</StyledTypography>
-    <StyledTypography variant="body1">Golden Lab</StyledTypography>
-    <StyledTypography variant="body1">5 years old</StyledTypography>
+    { text ?
+      <StyledTypography variant="body1">{ text }</StyledTypography> :
+      <>
+        <StyledTypography variant="body1">FIDO</StyledTypography>
+        <StyledTypography variant="body1">Golden Lab</StyledTypography>
+        <StyledTypography variant="body1">5 years old</StyledTypography>
+      </>
+    }
   </StyledRoot>
 );
 

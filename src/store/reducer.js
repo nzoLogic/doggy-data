@@ -1,12 +1,11 @@
 import * as actions from './actions';
 
 const defaultState = {
-  dogProfile: {
-    name: '',
-    breed: '',
-    birthdate: null,
-  }
-}
+  name: '',
+  breed: '',
+  birthdate: null,
+  isLoading: false,
+};
 
 export function dogProfileReducer(state = defaultState, action) {
   switch (action.type) {
@@ -14,9 +13,27 @@ export function dogProfileReducer(state = defaultState, action) {
       return {
         ...state,
         ...action.payload
-      }
+      };
+    case actions.GET_DOG_PROFILE:
+      return {
+        isLoading: true,
+      };
     default:
-      break;
+      return state;
+  }
+  return state;
+}
+
+const defaultUserState = {
+  isNewUser: true,
+};
+
+export function userReducer(state = defaultUserState, action) {
+  switch (action.type) {
+    case actions.IS_NEW_USER:
+      return {
+        isNewUser: action.payload
+      };
   }
   return state;
 }
