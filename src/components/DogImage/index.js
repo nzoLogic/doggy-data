@@ -6,20 +6,29 @@ import {
   StyledImageContainer,
   StyledTypography,
 } from './styles';
+import { showIf } from '../../helpers';
 
-const DogImage = ({ text }) => (
+const DogImage = ({ text, defaultImage = false }) => (
   <StyledRoot>
     <StyledImageContainer>
       <StyledImage src={ dogImage } />
     </StyledImageContainer>
-    { text ?
-      <StyledTypography variant="body1">{ text }</StyledTypography> :
-      <>
-        <StyledTypography variant="body1">FIDO</StyledTypography>
-        <StyledTypography variant="body1">Golden Lab</StyledTypography>
-        <StyledTypography variant="body1">5 years old</StyledTypography>
-      </>
+    { showIf(text)(() => (
+      <StyledTypography variant="body1">{ text }</StyledTypography>
+    ))
+
     }
+    {
+      showIf(defaultImage)(() => (
+        <>
+          <StyledTypography variant="body1">FIDO</StyledTypography>
+          <StyledTypography variant="body1">Golden Lab</StyledTypography>
+          <StyledTypography variant="body1">5 years old</StyledTypography>
+        </>
+
+      ))
+    }
+
   </StyledRoot>
 );
 

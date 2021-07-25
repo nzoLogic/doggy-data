@@ -14,7 +14,7 @@ export default function NewDogPage() {
           <DogProfileForm />
         </Grid>
         <Grid item md={ 4 }>
-          <DogImage />
+          <DogImage defaultImage />
         </Grid>
       </StyledRoot>
     </Page>
