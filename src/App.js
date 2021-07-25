@@ -18,7 +18,7 @@ const customTheme = createTheme({
     },
     fontFamily: ['Lato', 'san-serif'].join(',')
   },
-})
+});
 
 function App() {
   return (

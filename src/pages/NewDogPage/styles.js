@@ -5,4 +5,4 @@ export const StyledRoot = styled('div')(({ theme }) => ({
   width: '100%',
   flexGrow: '1',
   marginTop: '48px'
-}))
+}));

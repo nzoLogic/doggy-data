@@ -5,13 +5,14 @@ export const StyledRoot = styled('div')(({ theme }) => ({
   flexGrow: '1',
   display: 'flex',
   flexDirection: 'column',
+  height: '100vh',
   paddingLeft: '30px',
   paddingRight: '30px',
-}))
+}));
 
 export const StyledTopbar = styled('header')(({ theme }) => ({
   width: '100%',
   paddingTop: '30px',
   paddingBottom: '30px',
   backgroundColor: theme.backgroundColor,
-}))
+}));

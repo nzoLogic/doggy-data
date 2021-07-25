@@ -1,7 +1,9 @@
+import { StyledMain } from './styles';
+
 export default function Page(props) {
   return (
-    <main>
+    <StyledMain>
       { props.children }
-    </main>
-  )
+    </StyledMain>
+  );
 }

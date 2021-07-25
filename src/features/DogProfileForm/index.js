@@ -1,16 +1,21 @@
+import { useState } from 'react';
 import {
   Typography,
   TextField,
-  Form,
   Button,
 } from "../../components";
 import useDogProfileForm from "./hook";
-import { StyledDogProfileForm } from "./styles";
+import {
+  StyledDogProfileForm,
+  StyledRoot,
+  StyledButton,
+} from "./styles";
 
 const DogProfileForm = () => {
   const {
     handleSubmit,
     name,
+    disabled,
     setName,
     breed,
     setBreed,
@@ -19,17 +24,16 @@ const DogProfileForm = () => {
   } = useDogProfileForm();
 
   return (
-    <div>
-
+    <StyledRoot>
       <StyledDogProfileForm>
         <Typography variant="h3">Your Doggy Profile</Typography>
-        <TextField label="name" name="name" value={ name } onChange={ e => setName(e.target.value) } />
-        <TextField label="breed" name="breed" value={ breed } onChange={ e => setBreed(e.target.value) } />
-        <TextField type="date" label="dob" name="dob" />
+        <TextField required label="name" name="name" value={ name } onChange={ e => setName(e.target.value) } />
+        <TextField required label="breed" name="breed" value={ breed } onChange={ e => setBreed(e.target.value) } />
+        <TextField required type="date" label="dob" name="dob" onChange={ e => setBirthdate(e.target.value) } />
+        <StyledButton disabled={ disabled } component={ Button } onClick={ handleSubmit }>Next</StyledButton>
       </StyledDogProfileForm>
-      <Button onClick={ handleSubmit }>Next</Button>
-    </div>
-  )
-}
+    </StyledRoot>
+  );
+};
 
 export default DogProfileForm;
