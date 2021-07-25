@@ -18,6 +18,10 @@ export function dogProfileReducer(state = defaultState, action) {
       return {
         isLoading: true,
       };
+    case actions.SET_DOG_PROFILE:
+      return {
+        ...action.payload
+      };
     default:
       return state;
   }
@@ -32,7 +36,7 @@ export function userReducer(state = defaultUserState, action) {
   switch (action.type) {
     case actions.IS_NEW_USER:
       return {
-        isNewUser: action.payload
+        ...state
       };
   }
   return state;
