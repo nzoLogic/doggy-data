@@ -24,7 +24,9 @@ const FoodAndBehaviorPage = () => {
             <DietarySlider />
           </StyledSection>
         </StyledRow>
-        <Button>Next</Button>
+        <Grid item justifyContent="center" alignItems="center">
+          <Button>Next</Button>
+        </Grid>
       </StyledRoot>
     </Page>
   );
