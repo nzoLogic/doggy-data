@@ -16,6 +16,7 @@ const theme = {
   yellow: '#EDB147',
   red: '#E9765C',
   teal: '#8FB9AF',
+  brown: '#553635',
   button: {
     primary: '#553635',
   }
