@@ -1,4 +1,5 @@
 import { styled } from '@material-ui/core/styles';
+import { FoodAndBehaviorPage } from '../../pages';
 
 export const StyledRoot = styled('div')(({ theme }) => ({
   display: 'flex',
@@ -9,14 +10,20 @@ export const StyledRoot = styled('div')(({ theme }) => ({
   width: '100%'
 }));
 
-export const StyledImageContainer = styled('div')(({ theme }) => ({
+export const StyledImageContainer = styled('div')(({ theme, modifiers }) => ({
   backgroundColor: theme.yellow,
   borderRadius: '50%',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  height: '202px',
-  width: '202px',
+  ...(modifiers.size === "md" && {
+    height: '202px',
+    width: '202px',
+  }),
+  ...(modifiers.size === "sm" && {
+    height: '80px',
+    width: '80px'
+  })
 }));
 
 export const StyledImage = styled('img')(({ theme, modifiers }) => ({
@@ -25,8 +32,8 @@ export const StyledImage = styled('img')(({ theme, modifiers }) => ({
     height: '119px'
   }),
   ...(modifiers.size === "sm" && {
-    height: '80px',
-    width: '80px',
+    height: '52px',
+    width: '45px',
   })
 }));
 

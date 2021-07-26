@@ -12,13 +12,12 @@ const DogImage = ({
   size = "md",
   defaultImage = false }) => (
   <StyledRoot>
-    <StyledImageContainer>
+    <StyledImageContainer modifiers={ { size } }>
       <StyledImage src={ dogImage } modifiers={ { size } } />
     </StyledImageContainer>
     { showIf(text)(() => (
       <StyledTypography variant="body1">{ text }</StyledTypography>
     ))
-
     }
     {
       showIf(defaultImage)(() => (
