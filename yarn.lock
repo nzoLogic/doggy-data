@@ -5708,7 +5708,6 @@ __metadata:
     final-form: ^4.20.2
     react: ^17.0.2
     react-dom: ^17.0.2
-    react-final-form: ^6.5.3
     react-redux: ^7.2.4
     react-router-dom: ^5.2.0
     react-scripts: 4.0.3
@@ -12436,18 +12435,6 @@ fsevents@^1.2.7:
   version: 6.0.9
   resolution: "react-error-overlay@npm:6.0.9"
   checksum: 5e971284cc76af684940d78a91c8eac639f16b3b9500a03423ae177392cdaf320788b9c9112f58a2dde4f5a80688acdbc89334827354e95493244968af94830f
-  languageName: node
-  linkType: hard
-
-"react-final-form@npm:^6.5.3":
-  version: 6.5.3
-  resolution: "react-final-form@npm:6.5.3"
-  dependencies:
-    "@babel/runtime": ^7.12.1
-  peerDependencies:
-    final-form: ^4.20.0
-    react: ^16.8.0 || ^17.0.0
-  checksum: 6e1007e1adda1da74d6e0624398f7f04d5b31b409ef0c1c5fe1d35e1789011d0e0788932419b6b51563336fc4374c0322fd71d5794b7d15baceca01a7da74ef8
   languageName: node
   linkType: hard
 

@@ -1,5 +1,5 @@
 import { Page, BehavioralForm, DietarySlider } from "../../features";
-import { DogImage, Typography } from "../../components";
+import { DogImage, Typography, Button } from "../../components";
 import { Grid } from "@material-ui/core";
 import { StyledRoot, StyledTypography, StyledSection, StyledRow } from './styles';
 import { useDogProfile } from "../../store/selectors";
@@ -24,6 +24,7 @@ const FoodAndBehaviorPage = () => {
             <DietarySlider />
           </StyledSection>
         </StyledRow>
+        <Button>Next</Button>
       </StyledRoot>
     </Page>
   );
