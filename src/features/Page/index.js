@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { StyledMain } from './styles';
 import { useDispatch } from 'react-redux';
 import { actions } from '../../store';
-import { useHistory, useLocation, useRouteMatch } from 'react-router-dom';
+import { useHistory, useRouteMatch } from 'react-router-dom';
 
 export default function Page(props) {
   const history = useHistory();

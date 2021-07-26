@@ -19,9 +19,15 @@ export const StyledImageContainer = styled('div')(({ theme }) => ({
   width: '202px',
 }));
 
-export const StyledImage = styled('img')(({ theme }) => ({
-  width: '104px',
-  height: '119px'
+export const StyledImage = styled('img')(({ theme, modifiers }) => ({
+  ...(modifiers.size === "md" && {
+    width: '104px',
+    height: '119px'
+  }),
+  ...(modifiers.size === "sm" && {
+    height: '80px',
+    width: '80px',
+  })
 }));
 
 export const StyledTypography = styled('span')(({ theme }) => ({

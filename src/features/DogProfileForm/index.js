@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import {
   Typography,
   TextField,
@@ -10,6 +9,7 @@ import {
   StyledRoot,
   StyledButton,
 } from "./styles";
+import { getTodaysDate } from "../../helpers";
 
 const DogProfileForm = () => {
   const {
@@ -19,7 +19,6 @@ const DogProfileForm = () => {
     setName,
     breed,
     setBreed,
-    birthdate,
     setBirthdate
   } = useDogProfileForm();
 
@@ -29,7 +28,16 @@ const DogProfileForm = () => {
         <Typography variant="h3">Your Doggy Profile</Typography>
         <TextField required label="name" name="name" value={ name } onChange={ e => setName(e.target.value) } />
         <TextField required label="breed" name="breed" value={ breed } onChange={ e => setBreed(e.target.value) } />
-        <TextField required type="date" label="dob" name="dob" onChange={ e => setBirthdate(e.target.value) } />
+        <TextField
+          required
+          type="date"
+          label="dob"
+          name="dob"
+          defaultValue={ getTodaysDate() }
+          InputProps={ {
+            shrink: true
+          } }
+          onChange={ e => setBirthdate(e.target.value) } />
         <StyledButton disabled={ disabled } component={ Button } onClick={ handleSubmit }>Next</StyledButton>
       </StyledDogProfileForm>
     </StyledRoot>

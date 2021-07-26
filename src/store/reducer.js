@@ -25,7 +25,6 @@ export function dogProfileReducer(state = defaultState, action) {
     default:
       return state;
   }
-  return state;
 }
 
 const defaultUserState = {
@@ -38,6 +37,7 @@ export function userReducer(state = defaultUserState, action) {
       return {
         ...state
       };
+    default:
+      return state;
   }
-  return state;
 }
