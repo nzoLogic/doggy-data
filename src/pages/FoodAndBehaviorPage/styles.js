@@ -19,3 +19,11 @@ export const StyledRow = styled('div')(() => ({
   flexDirection: 'row',
   justifyContent: 'space-evenly'
 }));
+
+export const StyledButtonWrapper = styled('div')(() => ({
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  marginTop: '48px',
+}));

@@ -38,7 +38,6 @@ const DietarySlider = () => {
         defaultValue={ 0 }
         steps={ 5 }
         valueLabelDisplay="auto"
-        marks
         min={ 0 }
         max={ 5 }
         marks={ marks }
@@ -49,7 +48,6 @@ const DietarySlider = () => {
         defaultValue={ 0 }
         steps={ 5 }
         valueLabelDisplay="auto"
-        marks
         min={ 0 }
         max={ 5 }
         marks={ marks }
@@ -60,7 +58,6 @@ const DietarySlider = () => {
         defaultValue={ 0 }
         steps={ 5 }
         valueLabelDisplay="auto"
-        marks
         min={ 0 }
         max={ 5 }
         marks={ marks }

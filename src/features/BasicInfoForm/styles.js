@@ -11,3 +11,10 @@ export const StyledImage = styled('div')(() => ({
   width: '80px',
   height: '80px'
 }));
+
+export const StyledSection = styled('div')(() => ({
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center'
+}));

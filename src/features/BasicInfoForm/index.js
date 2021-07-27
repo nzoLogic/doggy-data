@@ -1,5 +1,5 @@
-import { StyledRoot, StyledImage } from './styles';
-import { DogImage, Typography, TextField } from '../../components';
+import { StyledRoot, StyledImage, StyledSection } from './styles';
+import { DogImage, Typography, TextField, } from '../../components';
 import { Grid } from "@material-ui/core";
 import useBasicInfoForm from './hook';
 import { getTodaysDate } from '../../helpers';
@@ -12,25 +12,22 @@ const BasicInfoForm = () => {
       <Grid item>
         <StyledImage component={ DogImage } size="sm" text={ dog.name } />
       </Grid>
-      <Grid
-        item
-        sm={ 12 }
-        lg={ 8 }
+      <StyledSection
+
       >
         <Typography variant="h3">Basic Info</Typography>
         <TextField
           id="date"
-          fullWidth
           label="date"
           type="date"
           name="currentDay"
           defaultValue={ getTodaysDate() }
           InputLabelProps={ {
-            shrink: true
+            shrink: "true"
           } }
         />
-        <TextField fullWidth label="weight" type="number" name="weight" />
-      </Grid>
+        <TextField label="weight" type="number" name="weight" />
+      </StyledSection>
     </StyledRoot>
   );
 };

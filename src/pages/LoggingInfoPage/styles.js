@@ -6,6 +6,9 @@ export const StyledRoot = styled('div')(() => ({
 
 export const StyledContainer = styled('div')(({ theme }) => ({
   display: 'flex',
-  justifyContent: 'flex-end',
-  marginTop: '16px'
+  justifyContent: 'center',
+  flexDirection: 'column',
+  marginTop: '16px',
+  alignItems: 'center',
+  height: '100%',
 }));

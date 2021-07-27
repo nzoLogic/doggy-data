@@ -1,5 +1,4 @@
 import { styled } from '@material-ui/core/styles';
-import { FoodAndBehaviorPage } from '../../pages';
 
 export const StyledRoot = styled('div')(({ theme }) => ({
   display: 'flex',

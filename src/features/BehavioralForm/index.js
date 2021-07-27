@@ -1,4 +1,3 @@
-import { useState } from "react";
 import useBehavioralForm from "./hook";
 import { StyledBehavior, StyledRoot } from './styles';
 import { Typography } from '../../components';

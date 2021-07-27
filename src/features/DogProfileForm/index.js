@@ -35,7 +35,7 @@ const DogProfileForm = () => {
           name="dob"
           defaultValue={ getTodaysDate() }
           InputProps={ {
-            shrink: true
+            shrink: "true"
           } }
           onChange={ e => setBirthdate(e.target.value) } />
         <StyledButton disabled={ disabled } component={ Button } onClick={ handleSubmit }>Next</StyledButton>
