@@ -22,9 +22,6 @@ const BasicInfoForm = () => {
           type="date"
           name="currentDay"
           defaultValue={ getTodaysDate() }
-          InputLabelProps={ {
-            shrink: "true"
-          } }
         />
         <TextField label="weight" type="number" name="weight" />
       </StyledSection>
